@@ -53,7 +53,7 @@ if ($stmt->execute()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ลงทะเบียนฝึกงาน | Internship System</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
