@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+--primary-red: #D32F2F;
+--dark-red: #B71C1C;
+--light-red: #FFEBEE;
+--white: #FFFFFF;
+--gray-light: #F8F9FA;
+--gray-medium: #E0E0E0;
+--gray-dark: #37474F;
+--shadow: 04px12px rgba(0, 0, 0, 0.05); /* Clean, subtle shadow */
+--transition: all0.2sease-in-out;
+--border-radius: 12px; /* Standard professional radius */
+}
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Outfit', sans-serif;
+background-color: var(--gray-light);
+color: var(--gray-dark);
+line-height: 1.6;
+}
+
+/* Layout */
+.container {
+max-width: 1000px;
+margin: 40pxauto;
+padding: 20px;
+}
+
+/* Header & Typography */
+h1, h2, h3 {
+color: var(--primary-red);
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+h1 {
+text-align: center;
+font-size: 2.5rem;
+letter-spacing: -1px;
+}
+
+hr {
+border: none;
+height: 1px;
+background: var(--gray-medium);
+margin: 30px0;
+}
+
+/* Cards & Sections */
+.card {
+background: var(--white);
+padding: 30px;
+border-radius: var(--border-radius);
+box-shadow: var(--shadow);
+margin-bottom: 30px;
+border: 1pxsolid rgba(211, 47, 47, 0.05);
+}
+
+/* Form Styles */
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+label {
+font-weight: 500;
+color: var(--gray-dark);
+font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+padding: 12px16px;
+border: 2pxsolid var(--gray-medium);
+border-radius: 8px;
+font-size: 1rem;
+transition: var(--transition);
+outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+border-color: var(--primary-red);
+box-shadow: 0004px rgba(211, 47, 47, 0.1);
+}
+
+/* Buttons */
+.btn {
+padding: 12px24px;
+border-radius: 8px;
+font-weight: 600;
+cursor: pointer;
+transition: var(--transition);
+border: none;
+text-decoration: none;
+display: inline-block;
+text-align: center;
+}
+
+.btn-primary {
+background-color: var(--primary-red);
+color: var(--white);
+}
+
+.btn-primary:hover {
+background-color: var(--dark-red);
+transform: translateY(-2px);
+box-shadow: 04px12px rgba(211, 47, 47, 0.3);
+}
+
+.btn-outline {
+background-color: transparent;
+border: 2pxsolid var(--primary-red);
+color: var(--primary-red);
+}
+
+.btn-outline:hover {
+background-color: var(--light-red);
+}
+
+/* Tables */
+.table-container {
+overflow-x: auto;
+border-radius: var(--border-radius);
+box-shadow: var(--shadow);
+background: var(--white);
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: var(--white);
+}
+
+th {
+background-color: var(--primary-red);
+color: var(--white);
+padding: 16px;
+text-align: left;
+font-weight: 600;
+font-size: 0.9rem;
+text-transform: uppercase;
+}
+
+td {
+padding: 16px;
+border-bottom: 1pxsolid var(--gray-medium);
+font-size: 0.95rem;
+}
+
+tr:last-child td {
+border-bottom: none;
+}
+
+tr:hover td {
+background-color: var(--light-red);
+}
+
+/* Navigation & Header Bar */
+.navbar {
+background: var(--white);
+padding: 15px40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 02px10px rgba(0,0,0,0.05);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.navbar .logo {
+font-weight: 700;
+color: var(--primary-red);
+font-size: 1.5rem;
+}
+
+.nav-links {
+display: flex;
+gap: 20px;
+align-items: center;
+}
+
+/* Badges */
+.badge {
+padding: 4px12px;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: 600;
+display: inline-block;
+}
+
+.badge-pending { background: #FFF9C4; color: #FBC02D; }
+.badge-approved { background: #C8E6C9; color: #388E3C; }
+.badge-rejected { background: #FFCDD2; color: #D32F2F; }
+
+/* Utilities */
+.text-center { text-align: center; }
+.mt-4 { margin-top: 1.5rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+/* Clean Footer */
+.friendly-footer {
+margin-top: 50px;
+padding: 30px;
+text-align: center;
+border-top: 1pxsolid var(--gray-medium);
+color: var(--gray-dark);
+font-size: 0.85rem;
+}
