@@ -68,7 +68,7 @@ $data = $_POST;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตรวจสอบข้อมูล | Internship System</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
