@@ -56,7 +56,7 @@ $row = $stmt->get_result()->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>จัดการสถานะ | Internship Admin</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -127,4 +127,4 @@ $row = $stmt->get_result()->fetch_assoc();
     </div>
 
 </body>
-</html>
+</html>
